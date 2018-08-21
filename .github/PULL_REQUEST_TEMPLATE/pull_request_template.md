@@ -1,3 +1,7 @@
+---
+name: Pull Request
+about: Suggest a series of code changes for this project
+ ---
 # Problem
 Describe the problematic behavior that this pull request changes or addresses. 
 If your Pull Request would [close an existing issue](https://blog.github.com/2013-05-14-closing-issues-via-pull-requests/), be sure to reference that in the description.
