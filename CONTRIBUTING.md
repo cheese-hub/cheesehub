@@ -1,7 +1,7 @@
 # Contributing
 
-We love pull requests from everyone. By participating in this project, you
-agree to abide by the thoughtbot [code of conduct].
+We love pull requests and issues from everyone. By participating in this project, you
+agree to abide by the CHEESE [code of conduct].
 
 [code of conduct]: https://github.com/cheese-hub/cheesehub/blob/master/CODE_OF_CONDUCT.md
 
