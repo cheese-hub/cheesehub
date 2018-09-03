@@ -28,10 +28,7 @@ Table of Contents
   about
   community
   documentation
-<<<<<<< HEAD
   development/index
-=======
->>>>>>> 0af7eac04d1e9660d46aa00e568b02fdb1f5cde0
 
 Indices and tables
 ==================
