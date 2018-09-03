@@ -28,6 +28,7 @@ Table of Contents
   about
   community
   documentation
+  development/index
 
 Indices and tables
 ==================
