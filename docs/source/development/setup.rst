@@ -13,10 +13,10 @@ On your Ubuntu VM:
 
 .. code-block:: bash
 
-   git clone https://github.com/cheese-hub/kubeadm-bootstrap
+   git clone https://github.com/nds-org/kubeadm-bootstrap
    cd kubeadm-bootstrap
    sudo ./install-kubeadm.bash
-   sudo -E ./init-master.bash
+   sudo -E ./init-master.bash weave
 
 Next, clone and configure the Workbench Helm chart:
 
