@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'CHEESE'
-copyright = u'2018, UIUC, Purdue'
+copyright = u'2018, Purdue University/University of Illinois at Urbana-Champaign'
 author = u'UIUC, Purdue'
 
 # The version info for the project you're documenting, acts as replacement for
