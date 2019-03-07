@@ -1,0 +1,296 @@
+Lessons
+============
+
+Who is this guide for?  
+----------------------
+
+This guide is for cybersecurity educators, students, or anyone else seeking both a broad
+understanding and practical hands-on exploration of some key cybersecurity
+topics and issues.  
+
+How to use this guide? 
+----------------------
+
+While the material in this guide can
+be used as is to gain a broad understanding of some specific cybersecurity bugs
+and their solutions; this guide is ideally used in conjunction with CHEESEHub.
+CHEESEHub hosts demonstrations of the cybersecurity bugs and solutions described
+in this guide. Users can get a first-hand look at the cybersecurity bug in
+action, its possible real-world implications, and, verify that the solution (if
+any) does indeed resolve the bug.  
+
+**Educators**
+
+Educators can use this guide and
+the associated CHEESEHub demonstrations to supplement their classroom
+instruction. This guide is designed to be dynamic, with new content being added
+as time progresses. As more cybersecurity demonstrations are added to CHEESEHub,
+associated documentation will be added to this guide. The demonstrations
+themselves are not designed to be comprehensive, covering every aspect of the
+cybersecurity bug. Instead, they are intended to give the user an illustrative
+example of the bug that can help supplement regular classroom instruction on the
+topic.  
+
+**Students**
+
+Students can use this guide to both learn about cybersecurity
+concepts that they are unfamiliar with, and, also gain new insights into
+concepts they are already familiar with. They can also use the CHEESEHub
+demonstrations to supplement their understanding of concepts taught in their
+coursework.  
+
+**Contributors**
+
+Contributors to CHEESEHub can use this guide to
+understand both the types of cybersecurity concepts that have been included, as
+well as, the documentation that would be required for any new contribution.
+
+Cybersecurity Overview 
+----------------------
+
+Cybersecurity encompasses a broad range of security
+issues related to computer software, hardware, and, communications. Due to the
+use of computing resources for managing privileged information, each of these
+issues can have far-reaching real-world consequences. The hosted applications on
+CHEESEHub attempt to illustrate such real-world consequences wherever possible.
+
+Hosted Applications 
+-------------------
+
+Network Security 
+----------------
+
+Network security is primarily concerned
+with unauthorized access, denial, or, malicious modification of network
+communication.  
+
+ArpSpoof 
+--------
+
+The ARP Spoofing attack is a typical
+“man-in-the-middle” attack by which a hacker who has gained access to
+communication between two parties, can subsequently monitor and relay modified
+communication between these parties without their knowledge. 
+
+The ARP (Address Resolution Protocol) protocol is used to discover the hardware
+MAC address given an IP address. An ARP message is broadcast to the local
+network, with the IP in question and the corresponding machine responds with its
+MAC address. The hardware MAC address is typically needed to route packets to
+the right machine on a local network. The mapping between IP and MAC addresses
+that have been discovered via ARP, are stored in an ARP table on each machine. A
+hacker on the same LAN as two communicating machines can send an ARP message
+providing their own MAC address in response to the IP address of either of the
+two machines. Thus, in effect, the hacker “poisons” the ARP table of these
+machines by injecting an erroneous IP address - MAC address mapping. As a
+result, messages intended for these machines will be routed to the hacker,
+allowing them to gain access to potentially sensitive data.  
+
+**Demonstration**
+
+The demonstration on CHEESEHub illustrates the ARP spoofing attack using three
+separate machines; a victim, server, and, hacker. The “arpspoof” software
+provided by the “dsniff” library is used in the hacker to perform an ARP
+spoofing attack on the victim. The hacker provides its own MAC address in
+response to the server’s IP address, causing all messages from the victim to the
+server to be routed through the hacker. We verify the success of the attack in
+two ways.  
+
+* We inspect the ARP table on the victim and discover two separate MAC addresses for the server’s IP address, one each from the server and hacker.  
+* We look at the routing of packets from the victim to the server (for a simple "ping" command) to discover that packets are delivered using two hops, first to the hacker and then to the server rather than a single hop directly to the server.
+
+
+Step-by-step instructions for this demonstration are as follows:
+
+
+Step 1: Add the ArpSpoof application
+
+Step 2: View the added application
+
+Step 3: Start the application’s containers
+
+Step 4: Launch the individual containers (open in separate browser tabs)
+
+Step 5: In the hacker page, open the Hacker.ipynb Jupyter notebook for
+instructions
+
+
+Step 6: In the server page, open the Server.ipynb Jupyter notebook (launches in
+new tab)
+
+
+Step 7: Launch a new terminal from the server Jupyter interface
+
+
+Step 8: Determine the IP address of the server by typing “ifconfig” in this
+terminal
+
+
+
+Step 9: Launch a terminal in the victim page
+
+
+
+Step 10: Find the IP address of the victim by typing “ifconfig” in the victim
+terminal
+
+
+
+Step 11: Look at the initial ARP table on the victim (it has only the gateway’s
+entry)
+
+
+
+Step 12: Ping the server’s IP 
+
+
+
+Step 13: Check the ARP table on the victim again (it now has an entry for the
+server’s IP)
+
+
+
+Step 14: Also check the route to the server using “traceroute”
+
+
+
+Step 15: Next, open a terminal on the hacker to perform the attack
+
+
+Step 16: Run the “arpspoof” command with the victim and server IPs
+
+
+
+Step 17: Ping the server from the victim again (wait for a bit to see this
+output)
+
+
+
+Step 18: Check the ARP table on the victim now (it has two entries with the same
+MAC address but different IP addresses; also this MAC address is different than
+what we observed for the server before; it is in-fact the hacker’s MAC address)
+
+
+
+Step 19: Check the route from the victim to the server (there are now two steps;
+first the hacker, then the server)
+
+
+
+Step 20: Shutdown the application
+
+
+
+**More Information**
+
+For more information on ARP poisoning and man-in-the-middle
+network attacks, see ?  
+
+
+Secure Programming 
+------------------
+
+Several cybersecurity flaws can
+ultimately be traced to a previously undetected vulnerability in computer
+software. With the burgeoning use of computer software and libraries in every
+conceivable domain, such vulnerabilities could be introduced from an imported
+library, without a software developer’s knowledge. Thus, it is vital to instruct
+both the current and future generation of developers (and not just cybersecurity
+engineers) on all known vulnerabilities and their solutions. As a start,
+CHEESEHub includes demonstrations of a few well-known and far-reaching software
+vulnerabilities.  
+
+SQL Injection 
+-------------
+
+The SQL (Structured Query Language)
+Injection bug exploits the vulnerability in database client code that does not
+properly validate user inputs. SQL is a computer language for performing query,
+insertion, update, and deletion operations on the data stored in a database. The
+SQL syntax also allows for several commands to be chained together, or to ignore
+the rest of a command using a comment character. Database client code that
+simply substitutes in a user’s input without validation can be exploited by a
+malicious user to run arbitrary SQL commands. Since databases often store
+privileged customer data in many applications, or implement access control for
+applications, a malicious user can either retrieve the privileged data, or gain
+access to secured resources.  
+
+**Demonstration**
+
+This demonstration has two parts,
+first we use vulnerable client code and demonstrate how a malicious user with
+knowledge of SQL syntax can retrieve, insert, or even delete data from a
+database that contains user and password records. In the second part, we start
+by making a minor fix to the database client code to get rid of the
+vulnerability. We will then demonstrate how the malicious user can no longer
+retrieve, insert, or delete data from the database after this fix. This
+demonstration is not intended as a complete account of all possible SQL
+injection attacks, neither does it provide the solution to all such attacks. It
+primarily demonstrates one possible vulnerability in database client code that
+developers need to be aware of, and, a specific solution that works for the
+client code in question. 
+
+A step-by-step account of the demonstration is as follows:
+
+Step 1: After adding the SQL Injection application and starting the container,
+launch it:
+
+
+Step 2: Open the SQLInjection.ipynb Jupyter notebook for instructions on
+following the demonstration:
+
+ 
+Step 3: The notebook provides some introductory material as well as various
+scenarios that exploit the vulnerability in the database client:
+
+
+Step 4: All of the commands specified in the notebook need to be run in a
+terminal. Start the terminal emulator included in Jupyter:
+
+Step 5: The demonstration uses a simple program that queries a database for user
+details when provided with the right username/password pair. To run the program,
+type EmailCloud at the terminal prompt:
+
+
+Step 6: When a valid username/password pair is provided, the program will return
+details about that user from the database:
+
+
+Step 7: When typing the malicious inputs, pay attention to the special
+characters being used (single quotes, semicolons, etc.):
+
+
+Step 8: You can always exit the program by typing ctrl-c at the Username:
+prompt:
+
+
+Step 9: To modify the client code to secure it against the vulnerability, go
+back to the Jupyter file listing page in your browser and navigate to the app
+folder, and click on the client.py file to open it:
+
+
+
+Step 10: Look for the lines marked as unsafe in the client.py file; the safe
+alternative is right below these lines:
+
+
+Step 11: Comment out the unsafe lines (using #) and uncomment the safe lines, so
+that the file now looks like this:
+
+
+Step 12: Save the changes to the client.py file:
+
+
+Step 13: Head back to the terminal, and restart the EmailCloud program. This
+time, the malicious inputs should no longer work:
+
+**More Information**
+
+For more information on SQL Injection attacks, refer to ...
+
+
+HeartBleed 
+----------
+
+Cryptography
+------------
+
