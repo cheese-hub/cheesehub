@@ -23,11 +23,13 @@ Table of Contents
 .. toctree::
   :glob:
   :titlesonly:
-  :maxdepth: 2
+  :maxdepth: 3
 
-  about
-  community
-  documentation
+  about/index
+  team/index
+  lessons/index
+  community/index
+  documentation/index
   development/index
 
 Indices and tables
