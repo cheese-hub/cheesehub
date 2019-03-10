@@ -21,10 +21,6 @@ Lessons
      - |github_icon|_
      - Rajesh Kalyanam
 
-
-
 .. |github_icon| image:: https://github.com/favicon.ico
    :width: 20px
 .. _github_icon: https://github.com/cheese-hub/network-security
-
-https://cheese-hub.github.io/network-security
