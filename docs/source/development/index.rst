@@ -1,10 +1,6 @@
 Developer's Guide
 =================
 
-
-Table of Contents
-------------------
-
 .. toctree::
   :glob:
   :titlesonly:
