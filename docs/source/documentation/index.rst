@@ -1,5 +1,5 @@
-Documentation
-=============
+User's Guide
+============
 
 * Quickstart
 * User guide

@@ -17,20 +17,25 @@ project consists of the following:
 * Learning ecosystem that is continuously updated
 
 
-Table of Contents
-------------------
-
 .. toctree::
-  :glob:
-  :titlesonly:
-  :maxdepth: 3
+  :caption: CHEESE
+  :maxdepth: 2
 
   about/index
   team/index
-  lessons/index
-  community/index
-  documentation/index
+  about/approach
+  contributing
   development/index
+
+.. toctree::
+  :caption: CHEESEHub
+  :maxdepth: 2
+
+  cheesehub
+  lessons/index
+  documentation/index
+  community/index
+
 
 Indices and tables
 ==================
