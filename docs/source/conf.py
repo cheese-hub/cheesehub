@@ -178,7 +178,7 @@ source_parsers = {
 
 html_logo = 'images/cheese-logo.png'
 html_theme_options = {
-    'logo_only': False,
+    'logo_only': True,
     'display_version': True,
     'sticky_navigation': True
 }
