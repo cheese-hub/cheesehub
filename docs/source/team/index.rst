@@ -10,12 +10,12 @@ Team
 *Division Director of IT Systems and Services, San Diego Supercomputing Center* 
 
 
-**Craig Willis**
-*Sr. Research Programmer, National Center for Supercomputing Applications, University of Illinois at Urbana Champaign* 
-
-
 **Rajesh Kalyanam**
 *Sr. Software Engineer, Research Computing, Purdue University* 
+
+
+**Craig Willis**
+*Sr. Research Programmer, National Center for Supercomputing Applications, University of Illinois at Urbana Champaign* 
 
 
 **Mike Lambert**
