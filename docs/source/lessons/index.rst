@@ -17,12 +17,12 @@ Lessons
      - |netsec_site|_
      - Rajesh Kalyanam
    * - Secure coding
-     - |github_icon|_
-     - |lesson_site|_
+     - |sc_repo|_
+     - |sc_site|_
      - Rajesh Kalyanam
    * - Cryptography
-     - |github_icon|_
-     - |lesson_site|_
+     - |crypto_repo|_
+     - |crypto_site|_
      - Rajesh Kalyanam
 
 .. |netsec_repo| image:: https://github.com/favicon.ico
@@ -33,10 +33,18 @@ Lessons
    :width: 20px
 .. _netsec_site: https://cheese-hub.github.io/network-security
 
-.. |github_icon| image:: https://github.com/favicon.ico
+.. |sc_repo| image:: https://github.com/favicon.ico
    :width: 20px
-.. _github_icon: https://github.com/cheese-hub/network-security
+.. _sc_repo: https://github.com/cheese-hub/secure-coding
 
-.. |lesson_site| image:: https://carpentries.github.io/instructor-training/assets/img/cp-logo-blue.svg
+.. |sc_site| image:: https://carpentries.github.io/instructor-training/assets/img/cp-logo-blue.svg
    :width: 20px
-.. _lesson_site: https://cheese-hub.github.io/network-security
+.. _sc_site: https://cheese-hub.github.io/secure-coding
+
+.. |crypto_repo| image:: https://github.com/favicon.ico
+   :width: 20px
+.. _crypto_repo: https://github.com/cheese-hub/cryptography
+
+.. |crypto_site| image:: https://carpentries.github.io/instructor-training/assets/img/cp-logo-blue.svg
+   :width: 20px
+.. _crypto_site: https://cheese-hub.github.io/cryptography
