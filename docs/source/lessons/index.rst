@@ -24,6 +24,10 @@ Lessons
      - |crypto_repo|_
      - |crypto_site|_
      - Rajesh Kalyanam
+   * - Machine Learning
+     - |ml_repo|_
+     - |ml_site|_
+     - Rajesh Kalyanam
 
 .. |netsec_repo| image:: https://github.com/favicon.ico
    :width: 20px
@@ -48,3 +52,11 @@ Lessons
 .. |crypto_site| image:: https://carpentries.github.io/instructor-training/assets/img/cp-logo-blue.svg
    :width: 20px
 .. _crypto_site: https://cheese-hub.github.io/cryptography
+
+.. |ml_repo| image:: https://github.com/favicon.ico
+   :width: 20px
+.. _ml_repo: https://github.com/cheese-hub/machine-learning
+
+.. |ml_site| image:: https://carpentries.github.io/instructor-training/assets/img/cp-logo-blue.svg
+   :width: 20px
+.. _ml_site: https://cheese-hub.github.io/machine-learning
