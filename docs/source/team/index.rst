@@ -18,6 +18,6 @@ Team
 *Sr. Research Programmer, National Center for Supercomputing Applications, University of Illinois at Urbana Champaign* 
 
 
-**Mike Lambert**
-*Research Programmer, Research Programmer, National Center for Supercomputing Applications, University of Illinois at Urbana Champaign*
+**Sara Lambert**
+*Sr. Research Programmer, National Center for Supercomputing Applications, University of Illinois at Urbana Champaign*
 
