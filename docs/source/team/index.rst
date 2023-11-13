@@ -19,5 +19,5 @@ Team
 
 
 **Sara Lambert**
-*Sr. Research Programmer, National Center for Supercomputing Applications, University of Illinois at Urbana Champaign*
+*Sr. Research Programmer,  National Center for Supercomputing Applications, University of Illinois at Urbana Champaign*
 
