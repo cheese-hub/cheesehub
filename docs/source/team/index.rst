@@ -15,9 +15,9 @@ Team
 
 
 **Craig Willis**
-*Sr. Research Programmer, National Center for Supercomputing Applications, University of Illinois at Urbana Champaign* 
+*Sr. Research Software Engineer, National Center for Supercomputing Applications, University of Illinois at Urbana Champaign* 
 
 
 **Sara Lambert**
-*Sr. Research Programmer, National Center for Supercomputing Applications, University of Illinois at Urbana Champaign*
+*Sr. Research Software Engineer, National Center for Supercomputing Applications, University of Illinois at Urbana Champaign*
 
