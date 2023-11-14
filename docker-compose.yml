@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  sphinx:
+    container_name: cheese-sphinxdocs
+    build: docs
+    image: cheesehub/docs
+    ports:
+    - "8083:80"
