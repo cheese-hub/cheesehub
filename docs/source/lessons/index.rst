@@ -30,6 +30,7 @@ Machine Learning in Cybersecurity
 
 * `DDoS Attack Classification`_
 * `SVM Poisoning Attack`_
+* `Neural Network Adversarial Attack`_
 
 .. _ARP Poisoning Attack: https://cheese-hub.github.io/network-security/02-arpspoof/index.html
 .. _SSL Strip Attack: https://cheese-hub.github.io/network-security/03-sslstrip/index.html
@@ -43,4 +44,5 @@ Machine Learning in Cybersecurity
 .. _Public Key Infrastructure Lab: https://cheese-hub.github.io/cryptography/03-pki/index.html
 .. _DDoS Attack Classification: https://cheese-hub.github.io/machine-learning/02-ddos-classification/index.html
 .. _SVM Poisoning Attack: https://cheese-hub.github.io/machine-learning/03-svm-poisoning/index.html
+.. _Neural Network Adversarial Attack: https://cheese-hub.github.io/machine-learning/04-adversarial-neural-network/index.html
 
